@@ -12,9 +12,10 @@ import VectorImage from './components/VectorImage'
 
 function App() {
   const [isHovering, setIsHovering] = useState(false);
+  const [isHoveringBlack, setIsHoveringBlack] = useState(false);
   return (
     <>
-    <DottedCursor isHovering={isHovering} />
+    <DottedCursor isHovering={isHovering} isHoveringBlack={isHoveringBlack} />
     <div className='relative'>
       <div className='absolute py-7 z-20 w-full'>
         <Navbar/>
@@ -41,7 +42,10 @@ function App() {
       </div>
     </div>
     <div>
-      <AboutMe/>
+      <div onMouseEnter={() => setIsHoveringBlack(true)}
+            onMouseLeave={() => setIsHoveringBlack(false)}>
+            <AboutMe/>
+            </div>
     </div>
 
     </>
