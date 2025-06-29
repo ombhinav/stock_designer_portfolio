@@ -35,9 +35,9 @@ function DottedCursor({isHovering, isHoveringBlack}) {
         style={{ animationDuration: '6s' }}
       />
 
-      <div className={`absolute top-0 left-0 transition-opacity duration-300 
+      <div className={`absolute top-0 left-0  transition-opacity duration-300
       ${isHovering ? 'opacity-100' : 'opacity-0'}`}>
-        <Dialog />
+        <Dialog/>
       </div>
       <div className={`absolute top-0 left-0 transition-opacity duration-300
       ${isHoveringBlack ? 'opacity-100' : 'opacity-0'}`}>

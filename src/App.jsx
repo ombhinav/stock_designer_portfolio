@@ -1,6 +1,5 @@
 import './App.css'
 import { useState } from 'react'
-import Dialog from './components/Dialog'
 import DottedCursor from './components/DottedCursor'
 
 import Hero from './components/Hero'
@@ -9,6 +8,7 @@ import Navbar from './components/Navbar'
 import VerticalLine from './components/verticalLine'
 import AboutMe from './components/AboutMe'
 import VectorImage from './components/VectorImage'
+import StackingScrollShowcase from './components/StackingScroll'
 
 function App() {
   const [isHovering, setIsHovering] = useState(false);
@@ -45,7 +45,11 @@ function App() {
       <div onMouseEnter={() => setIsHoveringBlack(true)}
             onMouseLeave={() => setIsHoveringBlack(false)}>
             <AboutMe/>
-            </div>
+      </div>
+      <div className='' onMouseEnter={() => setIsHoveringBlack(true)}
+            onMouseLeave={() => setIsHoveringBlack(false)}>
+        <StackingScrollShowcase/>
+      </div>
     </div>
 
     </>
