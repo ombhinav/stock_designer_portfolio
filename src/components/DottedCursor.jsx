@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-function DottedCursor() {
+import Dialog from "./Dialog";
+function DottedCursor({isHovering}) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -24,11 +25,20 @@ function DottedCursor() {
       style={{
         left: mousePos.x,
         top: mousePos.y,
-        transform: 'translate(-50%, -50%)',
+        transform: isHovering ? 'translate(-50%, -50%)' : 'translate(-50%, -50%)',
       }}
     >
-      <div className="w-6 h-6 border border-dashed border-black rounded-full animate-spin"
-           style={{ animationDuration: '6s' }}>
+      <div 
+        className={`w-6 h-6 border border-dashed border-black rounded-full animate-spin transition-opacity duration-300 ${
+          isHovering ? 'opacity-0' : 'opacity-100'
+        }`}
+        style={{ animationDuration: '6s' }}
+      />
+      
+      <div className={`absolute top-0 left-0 transition-opacity duration-300 ${
+        isHovering ? 'opacity-100' : 'opacity-0'
+      }`}>
+        <Dialog />
       </div>
     </div>
   );
