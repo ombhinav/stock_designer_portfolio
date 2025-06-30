@@ -26,7 +26,7 @@ function DarkCursor() {
       }}
     >
       <div 
-        className={`w-6 h-6 border border-black rounded-full bg-yellow-700 transition-opacity duration-300`}
+        className={`w-6 h-6 border border-black rounded-full bg-[#cf8b01] transition-opacity duration-300`}
         style={{ animationDuration: '6s' }}
       />
 

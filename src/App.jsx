@@ -10,6 +10,7 @@ import AboutMe from './components/AboutMe'
 import VectorImage from './components/VectorImage'
 import StackingScrollShowcase from './components/StackingScroll'
 
+
 function App() {
   const [isHovering, setIsHovering] = useState(false);
   const [isHoveringBlack, setIsHoveringBlack] = useState(false);
@@ -43,9 +44,12 @@ function App() {
     </div>
     <div>
       <div onMouseEnter={() => setIsHoveringBlack(true)}
-            onMouseLeave={() => setIsHoveringBlack(false)}>
-            <AboutMe/>
+            onMouseLeave={() => setIsHoveringBlack(false)} className=''>
+              <div className=''>
+                <AboutMe/>
+              </div>
       </div>
+      
       <div className='' onMouseEnter={() => setIsHoveringBlack(true)}
             onMouseLeave={() => setIsHoveringBlack(false)}>
         <StackingScrollShowcase/>
