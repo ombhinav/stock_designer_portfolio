@@ -25,54 +25,61 @@ function AboutMe2() {
                     >
                     <span
                         className={`inline-block h-7 w-7 transform rounded-full cursor-none bg-white shadow-[2px_14px_19px_-1px_rgba(0,_0,_0,_0.1)] transition-transform ${
-                            isToggled ? "translate-x-10" : "translate-x-1"
+                            isToggled ? "translate-x-10" : "translate-x-1"  
                         }`}
                         />
             </button>
         </div>
         <div className="flex">
             <div className="pl-30">
-                <div className="transition-all duration-400 max-w-sm mt-8">
+                <div className="transition-all duration-300 max-w-sm mt-16">
                 <p className="text-base leading-relaxed">
-                  <StrikeableText isToggled={isToggled}>Originally from </StrikeableText>
-                     Delhi (NCR), I started <span className={isToggled ? "line-through opacity-40" : ""}>out as a finance/</span>
-                  actuarial professional.{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>By destiny, I built a product and</span>{" "}
-                  now a product designer.{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>In the past I have</span> built 0 to 1
-                  products, <span className={isToggled ? "line-through opacity-40" : ""}>scaling them from</span> 1 to
-                  10, and <span className={isToggled ? "line-through opacity-40" : ""}>further growing them from</span>{" "}
-                  10 to 100.{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>
-                    My strong background in actuarial science makes me
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>Hey there! I’m</span> Prachi — a UI/UX designer
+                  {" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                    and
                   </span>{" "}
-                  good with data,{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>
-                    and every day, little by little I'm
+                  NIFT grad{" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                    with a passion for creating
                   </span>{" "}
-                  enhancing my process and intuition{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>as a product builder.</span>
+                  intuitive, user-centered {" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                  digital experiences. Skilled in  and responsive design
+                  </span>{" "}
+                  Figma, UX research, wireframing,{" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                  and
+                  </span>{" "}
+                  responsive design.{" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                  I love turning real-world problems into    
+                  </span>{" "}
+                  clean and functional interfaces{" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                  that feel good and look even better.
+                  </span>{" "}
                 </p>
               </div>
             </div>
 
-            <div className="pl-15 mt-30">
+            <div className="pl-15 mt-35">
               <div className="transition-all duration-300 max-w-sm mt-16">
                 <p className="text-base leading-relaxed">
-                  <span className={isToggled ? "line-through opacity-40" : ""}>I am a strong</span> believer in hard
-                  work.{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>
-                    No matter how many times I need to start fresh, the
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>I've got a bit of an OCD when it comes to keeping things</span> neat and 
+                  tidy{" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                    and it shows in my 
                   </span>{" "}
-                  joy of creating something exactly as envisioned{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>
-                    is what I chase. I constantly have the
+                  pixel-perfect layouts{" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                    strong sense of
                   </span>{" "}
-                  urge to build{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>
-                    or create things. It doesn't have to be design; it could be art, a new dish, doodles, comics,
-                    excuses, or many other things.
-                  </span>
+                 clarity, consistency{" "}
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                    and
+                  </span>{" "}
+                  modern visual language.
                 </p>
               </div>
             </div>
@@ -80,13 +87,20 @@ function AboutMe2() {
             <div className="pl-15 mt-60">
                 <div className="transition-all duration-300 max-w-xs mt-24">
                 <p className="text-base leading-relaxed">
-                    <span className={isToggled ? "line-through opacity-40" : ""}>
-                        I value{" "}
+                    <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                        Oh, and{" "}
                     </span>
-                   happiness and transparency{" "}
-                  <span className={isToggled ? "line-through opacity-40" : ""}>
-                    in the people around me, and working in such a culture is something that truly interests me.
-                  </span>
+                   fashion
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                    ? Big YES. I’ve got a knack for 
+                  </span>{" "}
+                  styling fits
+                  <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
+                    , so if we work together, you might just get some unexpected office outfit inspo along with  
+                  </span>{" "}
+                      sleek design solutions.
+                  
+
                 </p>
               </div>
             </div>

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Dialog from "./Dialog";
 import DarkCursor from "./DarkCursor";
 function DottedCursor({isHovering, isHoveringBlack}) {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mousePos, setMousePos] = useState({ x: 1000, y: 1000 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
