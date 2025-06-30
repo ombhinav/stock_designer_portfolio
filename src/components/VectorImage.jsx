@@ -1,11 +1,10 @@
-import design_girl from "../assets/design_girl.svg";
-import mac from "../assets/mac.PNG"
+import mac4 from "../assets/mac4.png"
 function VectorImage() {
   return (
     <div>
         <img
-            src={mac}
-            className="h-120 cursor-none "
+            src={mac4}
+            className="h-130 cursor-none -mb-[0.3px] "
             alt="Designer"
         />
     </div>

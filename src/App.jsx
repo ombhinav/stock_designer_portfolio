@@ -26,7 +26,7 @@ function App() {
       <div className='absolute z-30 mt-[190px] w-full'>
         <Hero/>
       </div>
-      <div className='flex justify-center absolute z-30 mt-[360px] w-full mb-7' >
+      <div className=' absolute z-30 w-full bottom-0 flex justify-center' >
             <div onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}>
             <VectorImage/>
