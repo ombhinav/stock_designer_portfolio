@@ -1,18 +1,17 @@
 function Navbar(){
     return(
-        <div className="flex ml-30 newsreader-font-sleek pt-0.5">
+        <div className="flex ml-30 font-myfont pt-0.5">
             <div>
                 Prachi Madhukar
             </div>
             <div className="ml-auto flex mr-25 ">
                 <div className="px-3">
-                    Work
+                    i am?                </div>
+                <div className="px-3">
+                    work
                 </div>
                 <div className="px-3">
-                    Comics
-                </div>
-                <div className="px-3">
-                    Videos
+                    contact
                 </div>
             </div>
         </div>

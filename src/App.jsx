@@ -9,6 +9,7 @@ import VerticalLine from './components/VerticalLine'
 import AboutMe from './components/AboutMe'
 import VectorImage from './components/VectorImage'
 import StackingScrollShowcase from './components/StackingScroll'
+import Contact from './components/Contact'
 
 
 function App() {
@@ -66,7 +67,7 @@ function App() {
       <StackingScrollShowcase/>
     </div>
     <div className='h-dvh width-full bg-white '>
-      hello me, contact
+      <Contact/>
     </div>
 
     </>

@@ -75,10 +75,10 @@ const StackingScrollShowcase = () => {
   }
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-black pb-40">
      
         <div className="sticky top-0 left-0 w-full z-50 bg-black px-15 pt-10 pb-30">
-        <h1 className="text-white text-8xl pl-10 mb-30">The Collection</h1>
+        <h1 className="text-white text-7xl pl-10 mb-30 font-myfontMed">Work</h1>
       </div>
      
       {/* Stacking Sections */}

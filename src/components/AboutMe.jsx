@@ -8,7 +8,7 @@ function AboutMe() {
     
     <div className="w-full bg-black pb-30 text-white pt-30">
         <div className="pl-30">
-            <h1 className="text-5xl font-light mb-10 text-white newsreader-font">I am?</h1>
+            <h1 className=" font-myfontMed text-5xl mb-10 text-white ">I am?</h1>
             <button
                     onClick={() => setIsToggled(!isToggled)}
                     className={`relative inline-flex h-10 w-18 items-center rounded-full transition-colors cursor-none  focus:ring-offset-black ${
@@ -22,10 +22,10 @@ function AboutMe() {
                         />
             </button>
         </div>
-        <div className="flex">
-            <div className="pl-30">
+        <div className="flex px-30">
+            <div className="">
                 <div className="transition-all duration-300 max-w-sm mt-16">
-                <p className="text-base leading-relaxed">
+                <p className="text-base leading-relaxed font-myfontText">
                   <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>Hey there! I’m</span> Prachi — a UI/UX designer
                   {" "}
                   <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
@@ -57,7 +57,7 @@ function AboutMe() {
 
             <div className="pl-15 mt-35">
               <div className="transition-all duration-300 max-w-sm mt-16">
-                <p className="text-base leading-relaxed">
+                <p className="text-base leading-relaxed font-myfontText">
                   <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>I've got a bit of an OCD when it comes to keeping things</span> neat and 
                   tidy{" "}
                   <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
@@ -76,9 +76,9 @@ function AboutMe() {
               </div>
             </div>
     
-            <div className="pl-15 mt-60">
+            <div className="px-15 mt-60">
                 <div className="transition-all duration-300 max-w-xs mt-24">
-                <p className="text-base leading-relaxed">
+                <p className="text-base leading-relaxed font-myfontText">
                     <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>
                         Oh, and{" "}
                     </span>

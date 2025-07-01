@@ -1,4 +1,31 @@
 @import "tailwindcss";
+@import './fonts.css';
+
+@theme {
+  --font-myfont: 'MyFont', sans-serif;
+  --font-myfontMed: 'MyFontMed', sans-serif;
+  --font-myfontText: 'MyFontText', sans-serif;
+}
+
+@font-face {
+  font-family: 'MyFontText';
+  src: url('./assets/fonts/sfproText.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyFontMed';
+  src: url('./assets/fonts/sfproMed.otf') format('opentype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./assets/fonts/sfpro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .newsreader-font-sleek {
   font-family: "Newsreader", serif;
