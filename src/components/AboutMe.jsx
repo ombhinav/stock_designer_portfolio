@@ -1,20 +1,12 @@
 import { useState } from "react"
+import HorizontalLine from './HorizontalLine'
 
-function StrikeableText({ children, isToggled }) {
-  return (
-    <span className={`relative transition-all duration-700 ${isToggled ? "opacity-40" : ""}`}>
-      {children}
-      <span className={`absolute inset-0 border-t border-white transition-all duration-700 ${
-        isToggled ? "scale-x-100" : "scale-x-0"
-      } origin-left`} style={{top: '50%'}}></span>
-    </span>
-  );
-}
-
-function AboutMe2() {
+function AboutMe() {
     const [isToggled, setIsToggled] = useState(false)
   return (
-    <div className="w-full bg-black pb-80 text-white pt-30">
+    <>
+    
+    <div className="w-full bg-black pb-30 text-white pt-30">
         <div className="pl-30">
             <h1 className="text-5xl font-light mb-10 text-white newsreader-font">I am?</h1>
             <button
@@ -106,7 +98,8 @@ function AboutMe2() {
             </div>
         </div>
     </div>
+    </>
   )
 }
 
-export default AboutMe2
+export default AboutMe

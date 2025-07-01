@@ -30,7 +30,7 @@ function App() {
           <Navbar/>
         </div>
         <div className='absolute mt-20 z-10'>
-          <HorizontalLine/>
+          <HorizontalLine color="black" duration={2000} delay={4000} />
         </div>
         <div className='absolute z-30 mt-[190px] w-full'>
           <Hero/>
@@ -61,10 +61,13 @@ function App() {
       </div>
     {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
     </div>
-        <div className='' onMouseEnter={() => setIsHoveringBlack(true)}
+    <div className='' onMouseEnter={() => setIsHoveringBlack(true)}
               onMouseLeave={() => setIsHoveringBlack(false)}>
-          <StackingScrollShowcase/>
-        </div>
+      <StackingScrollShowcase/>
+    </div>
+    <div className='h-dvh width-full bg-white '>
+      hello
+    </div>
 
     </>
   )

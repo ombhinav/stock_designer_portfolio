@@ -36,7 +36,7 @@ export default function SplashScreen({ onComplete }) {
 
   return (
     <div
-      className={`fixed inset-0 bg-white flex items-center justify-center z-50 transition-transform duration-1000 ease-in-out ${
+      className={`fixed inset-0 bg-white flex items-center justify-center z-100 transition-transform duration-1000 ease-in-out ${
         isAnimating ? "-translate-y-full" : "translate-y-0"
       }`}
       onTransitionEnd={handleTransitionEnd}
@@ -48,15 +48,15 @@ export default function SplashScreen({ onComplete }) {
         <cite className="text-lg text-gray-600 mb-12 block">— Steve Jobs</cite>
 
         {/* Loading bar container */}
-        <div className="w-80 max-w-full h-2 bg-gray-200 rounded-full mx-auto overflow-hidden">
+        <div className="w-80 max-w-full h-1 bg-gray-200 rounded-full mx-auto overflow-hidden">
           <div
-            className="h-full bg-gradient-to-r from-blue-600 to-purple-700 rounded-full transition-all duration-100 ease-out"
+            className="h-full bg-gradient-to-r from-[#cf8b01] to-[#7d520d] rounded-full transition-all duration-100 ease-out"
             style={{ width: `${progress}%` }}
           />
         </div>
 
         {/* Progress percentage */}
-        <div className="mt-4 text-sm text-gray-500 font-medium">{Math.round(progress)}%</div>
+        {/* <div className="mt-4 text-sm text-gray-500 font-medium">{Math.round(progress)}%</div> */}
       </div>
     </div>
   )

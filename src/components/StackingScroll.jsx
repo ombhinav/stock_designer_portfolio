@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import folder from "../assets/folder.svg"
+
 const StackingScrollShowcase = () => {
   const [scrollY, setScrollY] = useState(0)
 
@@ -66,8 +66,8 @@ const StackingScrollShowcase = () => {
 
     return {
       position: "sticky",
-      top: `${150+index * 20}px`,
-      zIndex: index + 1,
+      top: `${200+index * 20}px`,
+      zIndex: 50+index + 1,
       transform: `translateY(${progress * -50}px) scale(${1 - progress * 0.05})`,
     //   opacity: 1 - progress * 0.3,
       transition: "all 0.1s ease-out",
@@ -77,8 +77,12 @@ const StackingScrollShowcase = () => {
   return (
     <div className="min-h-screen bg-black">
      
+        <div className="sticky top-0 left-0 w-full z-50 bg-black px-15 pt-10 pb-30">
+        <h1 className="text-white text-8xl pl-10 mb-30">The Collection</h1>
+      </div>
+     
       {/* Stacking Sections */}
-      <div className="">
+      <div className="px-15">
         {sections.map((section, index) => (
           <div
             key={section.id}
@@ -105,7 +109,7 @@ const StackingScrollShowcase = () => {
       </div>
 
       {/* Spacer to allow last section to stack properly */}
-      <div className="h-screen"></div>
+      {/* <div className="h-screen"></div> */}
 
     </div>
   )

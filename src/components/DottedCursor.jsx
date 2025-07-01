@@ -22,7 +22,7 @@ function DottedCursor({isHovering, isHoveringBlack}) {
 
   return (
     <div
-      className="fixed pointer-events-none z-50"
+      className="fixed pointer-events-none z-500"
       style={{
         left: mousePos.x,
         top: mousePos.y,
