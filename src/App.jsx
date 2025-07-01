@@ -66,7 +66,7 @@ function App() {
       <StackingScrollShowcase/>
     </div>
     <div className='h-dvh width-full bg-white '>
-      hello
+      hello me, contact
     </div>
 
     </>
