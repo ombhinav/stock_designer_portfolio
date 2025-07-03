@@ -27,7 +27,7 @@ function App() {
       
       <DottedCursor isHovering={isHovering} isHoveringBlack={isHoveringBlack} />
       <div className='relative'>
-        <div className='absolute py-7 z-20 w-full'>
+        <div className='absolute py-7 z-20 w-full' id='home'>
           <Navbar/>
         </div>
         <div className='absolute mt-20 z-10'>
@@ -54,7 +54,7 @@ function App() {
       <div>
         <div onMouseEnter={() => setIsHoveringBlack(true)}
               onMouseLeave={() => setIsHoveringBlack(false)} className=''>
-                <div className=''>
+                <div id='about'>
                   <AboutMe/>
                 </div>
         </div>
@@ -62,11 +62,11 @@ function App() {
       </div>
     {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
     </div>
-    <div className='' onMouseEnter={() => setIsHoveringBlack(true)}
+    <div id='work' onMouseEnter={() => setIsHoveringBlack(true)}
               onMouseLeave={() => setIsHoveringBlack(false)}>
       <StackingScrollShowcase/>
     </div>
-    <div className='h-dvh width-full bg-white '>
+    <div className='h-dvh width-full bg-white ' id='contact'>
       <Contact/>
     </div>
 
