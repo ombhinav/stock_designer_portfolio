@@ -35,13 +35,13 @@ function Navbar() {
 
       {/* Right: Navigation Links */}
       <div className="ml-auto flex mr-25">
-        <Link to="about" smooth={true} duration={500} className="px-3 cursor-pointer">
+        <Link to="about" smooth={true} duration={500} className="px-3 cursor-none">
           i am?
         </Link>
-        <Link to="work" smooth={true} duration={500} className="px-3 cursor-pointer">
+        <Link to="work" smooth={true} duration={500} className="px-3 cursor-none">
           work
         </Link>
-        <Link to="contact" smooth={true} duration={500} className="px-3 cursor-pointer">
+        <Link to="contact" smooth={true} duration={500} className="px-3 cursor-none">
           contact
         </Link>
       </div>
