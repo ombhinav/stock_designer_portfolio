@@ -1,5 +1,4 @@
 import { useState } from "react"
-import HorizontalLine from './HorizontalLine'
 
 function AboutMe() {
     const [isToggled, setIsToggled] = useState(false)

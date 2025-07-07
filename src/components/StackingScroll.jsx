@@ -74,39 +74,30 @@ Interaction Design · Accessibility · Brand Storytelling`,
       top: `${120+index * 20}px`,
       zIndex: 50+index + 1,
       transform: `translateY(${progress * -50}px) scale(${1 - progress * 0.05})`,
-    //   opacity: 1 - progress * 0.3,
       transition: "all 0.1s ease-out",
     }
   }
 
   const getSectionBgColor = (id) => {
   const colors = {
-    1: "#f9f8f8", // light gray
-    2: "white", // light blue
-    3: "white", // very light blue
-    4: "black", // light orange
-    5: "#f0fdf4", // light green
-    6: "#fdf2f8", // light pink
-    7: "#f5f3ff", // light purple
-    8: "#fffbeb", // light yellow
+    1: "#f9f8f8", 
+    2: "white", 
+    3: "white", 
+    4: "black"
   }
 
-  return colors[id] || "#f9f8f8" // default to light gray if id not found
+  return colors[id] || "#f9f8f8" 
 }
 
  const getSectionBorderColor = (id) => {
   const colors = {
-    1: "#f9f8f8", // light gray
-    2: "black", // light blue
-    3: "black", // very light blue
-    4: "black", // light orange
-    5: "#f0fdf4", // light green
-    6: "#fdf2f8", // light pink
-    7: "#f5f3ff", // light purple
-    8: "#fffbeb", // light yellow
+    1: "#f9f8f8", 
+    2: "black", 
+    3: "black",
+    4: "black", 
   }
 
-  return colors[id] || "#f9f8f8" // default to light gray if id not found
+  return colors[id] || "#f9f8f8" 
 }
 
   return (
