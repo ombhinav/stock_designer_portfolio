@@ -85,7 +85,7 @@ Interaction Design · Accessibility · Brand Storytelling`,
   const colors = {
     1: "#f9f8f8", 
     2: "white", 
-    3: "#1f1e1e", 
+    3: "white", 
     4: "black"
   }
 
@@ -107,7 +107,7 @@ const getDescriptionBgColor = (id) => {
   const colors = {
     1: "white",
     2: "white",
-    3: "black",
+    3: "white",
     4: "white",
   }
   return colors[id] || "#f9f8f8" 
@@ -117,7 +117,7 @@ const getDescriptionTextColor = (id) => {
   const colors = {
     1: "black",
     2: "black",
-    3: "white",
+    3: "black",
     4: "black",
   }
   return colors[id] || "#f9f8f8" 
