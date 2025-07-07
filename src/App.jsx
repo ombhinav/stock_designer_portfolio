@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react'
 import DottedCursor from './components/DottedCursor'
 import SplashScreen from "./components/SplashScreen"
@@ -33,10 +32,10 @@ function App() {
         <div className='absolute mt-20 z-10'>
           <HorizontalLine color="black" duration={2000} delay={4000} />
         </div>
-        <div className='absolute z-30 mt-[190px] w-full'>
+        <div className='absolute z-30 mt-[390px] w-full pl-20'>
           <Hero/>
         </div>
-        <div className=' absolute z-30 w-full bottom-0 flex justify-center' >
+        <div className=' absolute z-30 w-full bottom-0 flex justify-end pr-40' >
               <div onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}>
               <VectorImage/>

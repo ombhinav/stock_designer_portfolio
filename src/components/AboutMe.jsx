@@ -23,7 +23,7 @@ function AboutMe() {
             </button>
         </div>
         <div className="flex px-30">
-            <div className="">
+            <div className="text-[#cccccc]">
                 <div className="transition-all duration-300 max-w-sm mt-16">
                 <p className="text-base leading-relaxed font-myfontText">
                   <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>Hey there! I’m</span> Prachi — a UI/UX designer
@@ -55,7 +55,7 @@ function AboutMe() {
               </div>
             </div>
 
-            <div className="pl-15 mt-35">
+            <div className="pl-15 mt-35 text-[#cccccc]">
               <div className="transition-all duration-300 max-w-sm mt-16">
                 <p className="text-base leading-relaxed font-myfontText">
                   <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>I've got a bit of an OCD when it comes to keeping things</span> neat and 
@@ -76,7 +76,7 @@ function AboutMe() {
               </div>
             </div>
     
-            <div className="px-15 mt-60">
+            <div className="px-15 mt-60 text-[#cccccc]">
                 <div className="transition-all duration-300 max-w-xs mt-24">
                 <p className="text-base leading-relaxed font-myfontText">
                     <span className={isToggled ? "line-through opacity-40 transition-all duration-700" : ""}>

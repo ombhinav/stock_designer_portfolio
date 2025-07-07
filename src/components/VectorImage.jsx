@@ -4,8 +4,10 @@ function VectorImage() {
     <div>
         <img
             src={mac4}
-            className="h-130 cursor-none -mb-[0.3px] "
+            className="h-200 cursor-none -mb-[0.3px] "
             alt="Designer"
+            
+
         />
     </div>
   )

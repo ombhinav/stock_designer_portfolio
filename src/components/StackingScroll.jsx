@@ -42,14 +42,12 @@ The project involved creating a scalable architecture that can handle high traff
   },
   {
     id: 3,
-    category: "Visual & Branding Designer",
-    title: "Faena Hotels ",
-    subtitle: "Defining a Visual Language of Luxury",
-    description: `For this project, I developed a comprehensive branding manual for Faena Hotels, a brand known for its artistic, luxurious identity. The work included creating logo explorations, final logo compositions, and an original pattern system inspired by the brand’s aesthetic and storytelling. The brand manual served as a visual guideline, detailing logo usage, color palettes, typography, and pattern application—ensuring design consistency across digital and print touchpoints.`,
-    toolsUsed: "Illustrator · Photoshop · InDesign",
-    skills: `Logo Design · Brand Identity · Pattern Design · Typography
-Visual Storytelling · Layout Design · Branding Systems
-Design Documentation · Composition · Color Theory`,
+    category: "Creditttt ",
+    title: "Credit card Hotels ",
+    subtitle: "Defining a credit card of Luxury",
+    description: `For this project, I will do nothing, That;s all folks, goodbye :))`,
+    toolsUsed: "My sharp mind · my beautiful hands · powerful laptop",
+    skills: `Don't care about it.`,
     img: Faena,
   },
   {
@@ -128,7 +126,7 @@ Interaction Design · Accessibility · Brand Storytelling`,
   >
     <div className=" w-full flex flex-col lg:flex-row items-center rounded-[27px] overflow-hidden relative border-2 " style={{ backgroundColor: getSectionBgColor(section.id), borderColor: getSectionBorderColor(section.id)}}>
       {/* Left Card Section */}
-      <div className="bg-white rounded-[57px] shadow pl-12 pb-12 py-8 max-w-lg w-full ml-6 my-6">
+      <div className="bg-white rounded-[57px] shadow px-8 pb-12 py-8 max-w-lg w-full ml-6 my-6">
         <div className="space-y-6">
           <div className="space-y-2">
             <p className="text-xl font-light text-black">{section.category}</p>
