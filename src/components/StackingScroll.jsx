@@ -3,6 +3,7 @@
 import Dresscue from "../assets/Dresscue.jpeg";
 import Cms from "../assets/Cms.jpeg";
 import Frame from "../assets/Frame.png"
+import Bank from "../assets/OneBanc.jpeg"
 import Faena from "../assets/Faena.jpg";
 import Roen from "../assets/Roen.jpeg";
 import React, { useState, useEffect } from "react"
@@ -40,15 +41,17 @@ The project involved creating a scalable architecture that can handle high traff
     skills: `User Research · Journey Mapping · Wireframing · Dashboard Design · Information Architecture · Visual Design · Interaction Design · Accessibility· Task Flow Optimization`,
     img: Frame,
   },
-  {
+ {
     id: 3,
-    category: "Creditttt ",
-    title: "Credit card Hotels ",
-    subtitle: "Defining a credit card of Luxury",
-    description: `For this project, I will do nothing, That;s all folks, goodbye :))`,
-    toolsUsed: "My sharp mind · my beautiful hands · powerful laptop",
-    skills: `Don't care about it.`,
-    img: Faena,
+    category: "UX/UI Design",
+    title: "OneBanc",
+    subtitle: "Bank Smart. Live Free",
+    description: `A modern UPI-based banking app tailored for seamless everyday payments, OneBanc was designed to help users manage, track, and simplify their financial activities with clarity and ease. I designed the platform with a focus on intuitive dashboards, real-time transaction visibility, and value-added features like spend/save insights, currency conversion, and bill splitting. The goal was to create an intelligent, secure, and user-friendly financial ecosystem that feels modern and trustworthy.`,
+    toolsUsed: "Figma · FigJam · Illustrator",
+    skills: `UX Research · Wireframing · UI Design · Design Systems
+Information Architecture · Interaction Design · Fintech UX
+Mobile App Design · Dashboard Design · Microinteractions · Visual Hierarchy`,
+    img: Bank,
   },
   {
     id: 4,
@@ -82,7 +85,7 @@ Interaction Design · Accessibility · Brand Storytelling`,
   const colors = {
     1: "#f9f8f8", 
     2: "white", 
-    3: "white", 
+    3: "#1f1e1e", 
     4: "black"
   }
 
@@ -97,6 +100,26 @@ Interaction Design · Accessibility · Brand Storytelling`,
     4: "black", 
   }
 
+  return colors[id] || "#f9f8f8" 
+}
+
+const getDescriptionBgColor = (id) => {
+  const colors = {
+    1: "white",
+    2: "white",
+    3: "black",
+    4: "white",
+  }
+  return colors[id] || "#f9f8f8" 
+}
+
+const getDescriptionTextColor = (id) => {
+  const colors = {
+    1: "black",
+    2: "black",
+    3: "white",
+    4: "black",
+  }
   return colors[id] || "#f9f8f8" 
 }
 
@@ -117,15 +140,15 @@ Interaction Design · Accessibility · Brand Storytelling`,
   >
     <div className=" w-full flex flex-col lg:flex-row items-center rounded-[27px] overflow-hidden relative border-2 " style={{ backgroundColor: getSectionBgColor(section.id), borderColor: getSectionBorderColor(section.id)}}>
       {/* Left Card Section */}
-      <div className="bg-white rounded-[57px] shadow px-8 pb-12 py-8 max-w-lg w-full ml-6 my-6">
+      <div className="bg-white rounded-[57px] shadow px-8 pb-12 py-8 max-w-lg w-full ml-6 my-6 " style={{ backgroundColor: getDescriptionBgColor(section.id)}}>
         <div className="space-y-6">
-          <div className="space-y-2">
-            <p className="text-xl font-light text-black">{section.category}</p>
-            <h1 className="text-4xl font-medium text-black">{section.title}</h1>
-            <h2 className="text-2xl font-normal text-black">{section.subtitle}</h2>
+          <div className="space-y-2" >
+            <p className="text-xl font-light text-black" style={{color: getDescriptionTextColor(section.id)}} >{section.category}</p>
+            <h1 className="text-4xl font-medium text-black" style={{color: getDescriptionTextColor(section.id)}}>{section.title}</h1>
+            <h2 className="text-2xl font-normal text-black" style={{color: getDescriptionTextColor(section.id)}}>{section.subtitle}</h2>
           </div>
 
-          <div className="text-black leading-relaxed text-[13px]">
+          <div className="text-black leading-relaxed text-[13px]" style={{color: getDescriptionTextColor(section.id)}}>
             {section.description.split('\n').map((paragraph, idx) => (
               <React.Fragment key={idx}>
                 {paragraph}
@@ -136,13 +159,13 @@ Interaction Design · Accessibility · Brand Storytelling`,
 
           <div className="space-y-4">
             <div>
-              <h3 className="font-semibold text-black text-base mb-1">Tools Used:</h3>
-              <p className="font-normal text-black text-[13px]">{section.toolsUsed}</p>
+              <h3 className="font-semibold text-black text-base mb-1" style={{color: getDescriptionTextColor(section.id)}}>Tools Used:</h3>
+              <p className="font-normal text-black text-[13px]" style={{color: getDescriptionTextColor(section.id)}}>{section.toolsUsed}</p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-black text-base mb-1">Skills Applied:</h3>
-              <p className="font-normal text-black text-[13px] leading-relaxed">
+              <h3 className="font-semibold text-black text-base mb-1" style={{color: getDescriptionTextColor(section.id)}}>Skills Applied:</h3>
+              <p className="font-normal text-black text-[13px] leading-relaxed" style={{color: getDescriptionTextColor(section.id)}}>
                 {section.skills.split('\n').map((skill, idx) => (
                   <React.Fragment key={idx}>
                     {skill}
