@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-
+import { useEffect, useState } from "react";
 
 function HorizontalLine({
   width = "100vw",
@@ -11,15 +10,15 @@ function HorizontalLine({
   delay = 0,
   className = "",
 }) {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsVisible(true)
-    }, delay)
+      setIsVisible(true);
+    }, delay);
 
-    return () => clearTimeout(timer)
-  }, [delay])
+    return () => clearTimeout(timer);
+  }, [delay]);
 
   return (
     <div
@@ -33,7 +32,7 @@ function HorizontalLine({
         transition: `transform ${duration}ms ease-out`,
       }}
     />
-  )
+  );
 }
 
-export default HorizontalLine
+export default HorizontalLine;
