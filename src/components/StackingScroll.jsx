@@ -153,7 +153,7 @@ Interaction Design · Accessibility · Brand Storytelling`,
     const colors = {
       1: "https://www.behance.net/gallery/228510137/Dresscue-smart-wardrobe-case-study",
       2: "https://www.behance.net/gallery/229794877/Fintech-App-Design-for-OneBanc-Technologies-pvt-ltd",
-      3: "",
+      3: "https://www.behance.net/gallery/227658907/UI-redesign-project-College-Management-stystem",
       4: "https://www.behance.net/gallery/228453481/ROEN-Web-design",
     };
     return colors[id] || "#";
