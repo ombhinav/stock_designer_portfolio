@@ -32,7 +32,19 @@ const StackingScrollShowcase = () => {
     img: Dresscue,
   },
   {
-    id: 2,
+     id: 2,
+     category: "UX/UI Design",
+     title: "OneBanc",
+     subtitle: "Bank Smart. Live Free",
+     description: `A modern UPI-based banking app tailored for seamless everyday payments, OneBanc was designed to help users manage, track, and simplify their financial activities with clarity and ease. I designed the platform with a focus on intuitive dashboards, real-time transaction visibility, and value-added features like spend/save insights, currency conversion, and bill splitting. The goal was to create an intelligent, secure, and user-friendly financial ecosystem that feels modern and trustworthy.`,
+     toolsUsed: "Figma · FigJam · Illustrator",
+     skills: `UX Research · Wireframing · UI Design · Design Systems
+  Information Architecture · Interaction Design · Fintech UX
+  Mobile App Design · Dashboard Design · Microinteractions · Visual Hierarchy`,
+     img: Banc,
+   },
+  {
+    id: 3,
     category: "UI/UX Case study",
     title: "Redesigning User Interface",
     subtitle: "College Management System",
@@ -41,18 +53,6 @@ The project involved creating a scalable architecture that can handle high traff
     toolsUsed: "Figma · Illustrator · Photoshop",
     skills: `User Research · Journey Mapping · Wireframing · Dashboard Design · Information Architecture · Visual Design · Interaction Design · Accessibility· Task Flow Optimization`,
     img: Frame,
-  },
- {
-    id: 3,
-    category: "UX/UI Design",
-    title: "OneBanc",
-    subtitle: "Bank Smart. Live Free",
-    description: `A modern UPI-based banking app tailored for seamless everyday payments, OneBanc was designed to help users manage, track, and simplify their financial activities with clarity and ease. I designed the platform with a focus on intuitive dashboards, real-time transaction visibility, and value-added features like spend/save insights, currency conversion, and bill splitting. The goal was to create an intelligent, secure, and user-friendly financial ecosystem that feels modern and trustworthy.`,
-    toolsUsed: "Figma · FigJam · Illustrator",
-    skills: `UX Research · Wireframing · UI Design · Design Systems
-Information Architecture · Interaction Design · Fintech UX
-Mobile App Design · Dashboard Design · Microinteractions · Visual Hierarchy`,
-    img: Banc,
   },
   {
     id: 4,
@@ -85,8 +85,8 @@ Interaction Design · Accessibility · Brand Storytelling`,
   const getSectionBgColor = (id) => {
   const colors = {
     1: "#f9f8f8", 
-    2: "white", 
-    3: "#5e5e5e", 
+    2: "#5e5e5e", 
+    3: "white", 
     4: "black"
   }
 
@@ -96,8 +96,8 @@ Interaction Design · Accessibility · Brand Storytelling`,
  const getSectionBorderColor = (id) => {
   const colors = {
     1: "#f9f8f8", 
-    2: "black", 
-    3: "black",
+    2: "black",
+    3: "black", 
     4: "black", 
   }
 
@@ -107,8 +107,8 @@ Interaction Design · Accessibility · Brand Storytelling`,
 const getDescriptionBgColor = (id) => {
   const colors = {
     1: "white",
-    2: "white",
-    3: "black",
+    2: "black",
+    3: "white",
     4: "white",
   }
   return colors[id] || "#f9f8f8" 
@@ -117,8 +117,8 @@ const getDescriptionBgColor = (id) => {
 const getDescriptionTextColor = (id) => {
   const colors = {
     1: "black",
-    2: "black",
-    3: "white",
+    2: "white",
+    3: "black",
     4: "black",
   }
   return colors[id] || "#f9f8f8" 

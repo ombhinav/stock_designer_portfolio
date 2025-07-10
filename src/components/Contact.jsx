@@ -24,7 +24,7 @@ function Contact() {
           </div>
         </div>
         <div className="pl-20">
-          <img src={handshake} className="h-full"/>
+          <img src={handshake}/>
         </div>
         </div>
     </>
