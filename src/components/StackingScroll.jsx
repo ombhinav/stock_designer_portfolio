@@ -6,6 +6,7 @@ import Frame from "../assets/Frame.png"
 import Bank from "../assets/OneBanc.jpeg"
 import Faena from "../assets/Faena.jpg";
 import Roen from "../assets/Roen.jpeg";
+import Banc from "../assets/Banc.jpeg";
 import React, { useState, useEffect } from "react"
 
 const StackingScrollShowcase = () => {
@@ -51,7 +52,7 @@ The project involved creating a scalable architecture that can handle high traff
     skills: `UX Research · Wireframing · UI Design · Design Systems
 Information Architecture · Interaction Design · Fintech UX
 Mobile App Design · Dashboard Design · Microinteractions · Visual Hierarchy`,
-    img: Bank,
+    img: Banc,
   },
   {
     id: 4,
@@ -85,7 +86,7 @@ Interaction Design · Accessibility · Brand Storytelling`,
   const colors = {
     1: "#f9f8f8", 
     2: "white", 
-    3: "white", 
+    3: "#5e5e5e", 
     4: "black"
   }
 
@@ -107,7 +108,7 @@ const getDescriptionBgColor = (id) => {
   const colors = {
     1: "white",
     2: "white",
-    3: "white",
+    3: "black",
     4: "white",
   }
   return colors[id] || "#f9f8f8" 
@@ -117,7 +118,7 @@ const getDescriptionTextColor = (id) => {
   const colors = {
     1: "black",
     2: "black",
-    3: "black",
+    3: "white",
     4: "black",
   }
   return colors[id] || "#f9f8f8" 
